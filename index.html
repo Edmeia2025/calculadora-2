@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabaljando com Java Script</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/calculadora-simple.js"></script>
+</head>
+
+<body>
+    <div class="calculadora">
+        <form action="">
+            <h1>Calculadora</h1>
+
+            <label for="">Valor 1</label><br>
+            <input type="number" value="0" id="valor1"><br><br>
+
+            <label for="">Valor 2</label><br>
+            <input type="number" value="0" id="valor2"><br><br>
+
+            <label for="operacao">Operação</label><br>
+            <select name="Operação" id="operacao">
+                <option value="+">Soma</option>
+                <option value="-'">Subtração</option>
+                <option value="/">Divição</option>
+                <option value="*">Multiplicaçao</option>
+            </select>
+
+            <br><br>
+
+            <button type="button" onclick="calcular()">Calcular</button><br><br>
+
+            <label for="">Resultado:</label><br>
+            <span id="resultado">0</span>
+        </form>
+    </div>
+
+</body>
+
+</html>
